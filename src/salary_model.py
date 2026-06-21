@@ -1,9 +1,9 @@
 # Baseline salaries
 MALE_SALARY_MEAN = 40
-MALE_SALARY_STD = 10
+MALE_SALARY_STD = 5
 
 FEMALE_SALARY_MEAN = 35
-FEMALE_SALARY_STD = 5
+FEMALE_SALARY_STD = 3
 
 # Biases
 NON_WHITE_FACTOR = 0.95
@@ -30,10 +30,12 @@ def experience_factor(years):
     if years < 2:
         return 1.0
     elif years < 5:
-        return 1.05
+        return 1.10
     elif years < 10:
-        return 1.15
+        return 1.20
     elif years < 20:
-        return 1.25
-    else:
         return 1.30
+    elif years < 30:
+        return 1.35
+    else:
+        return 1.40
