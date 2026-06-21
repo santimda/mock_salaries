@@ -11,7 +11,8 @@ MEN_NAMES = [
     "Steve",
     "Carlos",
     "Oscar",
-    "Tim"
+    "Tim",
+    "Alex"
 ]
 
 WOMEN_NAMES = [
@@ -19,7 +20,8 @@ WOMEN_NAMES = [
     "Maria",
     "Paula",
     "Elisabeth",
-    "Jessica"
+    "Jessica",
+    "Alex"
 ]
 
 WHITE_FRACTION = 0.6    # Assume a majority of white people
@@ -74,7 +76,7 @@ if __name__ == "__main__":
 
     DATA_DIR.mkdir(exist_ok=True)
 
-    N = 20000
+    N = 25000
 
     people = [
         generate_person()
