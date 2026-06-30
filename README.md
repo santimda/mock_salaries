@@ -50,7 +50,7 @@ The notebook compares three regression approaches:
 2. Random Forest Regressor
 3. Gradient Boosting Regressor
 
-All models are trained using the same train/test split and preprocessing pipeline.
+All models are trained using the same train/test split and preprocessing pipeline. Ridge has an improved performance using a Quantile scaler instead of a Standard one. 
 
 ## Main Findings
 
@@ -61,7 +61,7 @@ Gradient Boosting achieved the best overall performance:
 | Model             | Test R² |
 | ----------------- | ------- |
 | Ridge             | ~0.76   |
-| Random Forest     | ~0.76   |
+| Random Forest     | ~0.79   |
 | Gradient Boosting | ~0.80   |
 
 ### Feature Importance Recovery
